@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form action="" class="form">
+            <div class="group__form">
+                <label for="user" class="label__form">User</label>
+                <div class="group-input__form">
+                    <input type="text" class="input__form" name="user" id="user" placeholder="john123">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">The user must only have letters, numbers, dash, and underscore.</p>
+            </div>
+
+            <div class="group__form">
+                <label for="name" class="label__form">Name</label>
+                <div class="group-input__form">
+                    <input type="text" class="input__form" name="name" id="name" placeholder="John Doe">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">The name must only have letters and spaces.</p>
+            </div>
+
+            <div class="group__form">
+                <label for="password" class="label__form">Password</label>
+                <div class="group-input__form">
+                    <input type="password" class="input__form" name="password" id="password">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">the password must be have 4-12 digit.</p>
+            </div>
+
+            <div class="group__form">
+                <label for="password2" class="label__form">Repeat password</label>
+                <div class="group-input__form">
+                    <input type="password" class="input__form" name="password2" id="password2">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">Both passwords must be equals</p>
+            </div>
+
+            <div class="group__form">
+                <label for="email" class="label__form">Email</label>
+                <div class="group-input__form">
+                    <input type="email" class="input__form" name="email" id="email" placeholder="correo@correo.com">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">Please insert a valid email address</p>
+            </div>
+
+            <div class="group__form">
+                <label for="phone" class="label__form">Phone</label>
+                <div class="group-input__form">
+                    <input type="tel" class="input__form" name="phone" id="phone" placeholder="111345277">
+                    <span class="validation-state__form material-symbols-outlined">cancel</span>
+                </div>
+                <p class="input-error__form">Please insert a valid phone number, which must have 7-14 digits without symbols and spaces.</p>
+            </div>
+
+            <div class="group__form term-group__form">
+                <label class="label__form">
+                    <input class="checkbox__form" type="checkbox" name="term">
+                    I Agree
+                </label>
+            </div>
+
+            <div class="message__form">
+                <p><span class="material-symbols-outlined">warning</span><b>Error: </b>Please fill in the form correctly</p>
+            </div>
+
+            <div class="group__form btn-submit-group__form">
+                <button type="submit" class="btn__form">Submit</button>
+                <p class="submit-success__form">The form was sent successfully</p>
+            </div>
+        </form>
+    </main>
+    <script src="/js/form.js"></script>
+</body>
+</html>
